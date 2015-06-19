@@ -569,6 +569,7 @@ a:visited{
     color: black;
 }
 .copyRight{
+  margin-top: 300px;
   font-size: 10px;
   color: gray;
 }
@@ -579,5 +580,6 @@ fieldset{
     border: 0;
 }
 header{
-    background-color: #E8F1FF;
+  width: 100%;
+  background-color: #E8F1FF;
 }
