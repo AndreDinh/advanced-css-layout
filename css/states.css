@@ -8,6 +8,10 @@ a:hover{
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  transition-duration: 1s;
+}
+img:hover{
+  -webkit-filter:blur(3px);
 }
 
 @-webkit-keyframes pulse {
