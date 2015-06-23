@@ -3,7 +3,7 @@
 
 /*header*/
   header{
-  display: block;
+  display:inline-block;
   }
 /*body*/
   .article__header--form{

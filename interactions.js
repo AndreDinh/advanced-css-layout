@@ -1,48 +1,42 @@
-// var imageParagraph = document.getElementById('imgP');
-// imageParagraph.addclass('animated bounceIn');
-// var fieldParagraph = document.getElementById('fieldP');
-// fieldParagraph.addclass('animated bounceIn');
-// var paragraph = document.getElementById('paragraph');
-// paragraph.addclass('animated flipInY')
 var hover = (function()
 {
     function mouseMoveF(e)
     {
-        if(!this.shel && this.classList.contains('hidden'))
+        if(!this.show && this.classList.contains('hidden'))
         {
             this.classList.remove('hidden');
             return;
         }
 
-        if(this.shel.classList.contains('hidden'))
+        if(this.show.classList.contains('hidden'))
         {
-            this.shel.classList.remove('hidden');
+            this.show.classList.remove('hidden');
             return;
         }
     }
 
     function mouseOutF(e)
     {
-        if(!this.shel)
+        if(!this.show)
         {
             this.classList.add('hidden');
             return;
         }
 
-        this.shel.classList.add('hidden');
+        this.show.classList.add('hidden');
     }
 
-    function moveShow(el, shel)
+    function moveShow(el, show)
     {
-        el.shel = shel;
+        el.show = show;
 
         el.addEventListener('mousemove', mouseMoveF);
         el.addEventListener('mouseout', mouseOutF);
 
-        shel.addEventListener('mousemove', mouseMoveF);
-        shel.addEventListener('mouseout', mouseOutF);
+        show.addEventListener('mousemove', mouseMoveF);
+        show.addEventListener('mouseout', mouseOutF);
 
-        shel.classList.add('hidden');
+        show.classList.add('hidden');
     }
 
     return {
@@ -51,3 +45,9 @@ var hover = (function()
         mouseMoveF: mouseMoveF
     };
 })();
+var aniamte = document.getElementById('email');
+var about = document.getElementById('about');
+var github = document.getElementById('github');
+hover.moveShow(contact,email);
+hover.moveShow(aboutLink,about);
+hover.moveShow(project,github);
