@@ -17,12 +17,18 @@
       <header id="header" class="container ">
         <h1>Andre's blog</h1>
         <nav class"nav__link">
-          <a id="contact"href="contact.html" class="nav__link icon-home">Contact</a>
-          <a id="email" class="hidden" href="">dinh.andre@yahoo.com</a>
-          <a id="aboutLink"href="about.html" class="nav__link icon-keyboard">About</a>
-          <a id="about" class="hidden" href="">Lorem</a>
-          <a id="projects"href="projects.html" class="icon-github nav__link">Projects</a>
-          <a id="github" class="hidden" href="">GitHub</a>
+          <span class="toggle_nav">
+            <a id="contact" href="contact.html" class="nav__link icon-home">Contact</a>
+            <a id="email" class="hidden" href="">dinh.andre@yahoo.com</a>
+          </span>
+          <span class="toggle_nav">
+            <a id="aboutLink" href="about.html" class="nav__link icon-keyboard">About</a>
+            <a id="about" class="hidden" href="">Lorem</a>
+          </span>
+          <span class="toggle_nav">
+            <a id="projects" href="projects.html" class="icon-github nav__link">Projects</a>
+            <a id="github" class="hidden" href="">GitHub</a>
+          </span>
         </nav>
       </header>
       <article id="paragraph" class=" article__header--paragraph col span_12_of_12">
@@ -58,6 +64,7 @@
     <footer class="col span_5_of_12">
       <p class="copyRight">Andre's Blog &copy; 2015 - All Rights Reserved</p>
     </footer>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="interactions.js"></script>
     <script src="scrolling.js"></script>
   </body>
