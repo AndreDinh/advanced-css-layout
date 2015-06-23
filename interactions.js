@@ -1,53 +1,10 @@
-var hover = (function()
-{
-    function mouseMoveF(e)
-    {
-        if(!this.show && this.classList.contains('hidden'))
-        {
-            this.classList.remove('hidden');
-            return;
-        }
+$('document').ready(function(){
 
-        if(this.show.classList.contains('hidden'))
-        {
-            this.show.classList.remove('hidden');
-            return;
-        }
-    }
+  $('.toggle_nav').on('mouseover', function(){
+    $(this).children(':nth-child(2)').removeClass('hidden');
+  });
+  $('.toggle_nav').on('mouseleave', function(){
+    $(this).children(':nth-child(2)').addClass('hidden');
+  });
 
-    function mouseOutF(e)
-    {
-        if(!this.show)
-        {
-            this.classList.add('hidden');
-            return;
-        }
-
-        this.show.classList.add('hidden');
-    }
-
-    function moveShow(el, show)
-    {
-        el.show = show;
-
-        el.addEventListener('mousemove', mouseMoveF);
-        el.addEventListener('mouseout', mouseOutF);
-
-        show.addEventListener('mousemove', mouseMoveF);
-        show.addEventListener('mouseout', mouseOutF);
-
-        show.classList.add('hidden');
-    }
-
-    return {
-        moveShow: moveShow,
-        mouseOutF: mouseOutF,
-        mouseMoveF: mouseMoveF
-    };
-})();
-var aniamte = document.getElementById('email');
-var about = document.getElementById('about');
-var github = document.getElementById('github');
-hover.moveShow(contact,email);
-hover.moveShow(aboutLink,about);
-hover.moveShow(project,github);
+});
