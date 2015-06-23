@@ -6,9 +6,6 @@
   display: block;
   }
 /*body*/
-  img{
-    display: none;
-  }
   .article__header--form{
     display: block;
     height: 10%;
@@ -55,6 +52,13 @@
   }
 
 }
+/*non media styles*/
+.hidden{
+  /*position: absolute;*/
+  /*visibility: hidden;*/
+  display: none;
+}
   article:nth-child(odd){
     background-color: #9CC4FF;
     opacity: 0.5;
+}
