@@ -1,6 +1,5 @@
 a:hover{
   color: white;
-  border-bottom: 10px;
-  border-bottom: 1px solid white;
+  border-bottom: 0.63 em;
+  border-bottom:  0.06 em solid white;
 }
-
