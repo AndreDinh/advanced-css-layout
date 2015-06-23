@@ -10,31 +10,36 @@
     <link href="css/layout.css" type="text/css" rel="stylesheet" />
     <link href="css/module.css" type="text/css" rel="stylesheet" />
     <link href="css/states.css" type="text/css" rel="stylesheet" />
+    <link href="css/animate.css" type="text/css" rel="stylesheet" />
   </head>
   <body class="section group">
     <main>
-      <header class="container ">
+      <header id="header" class="container ">
         <h1>Andre's blog</h1>
         <nav class"nav__link">
-          <a href="contact.html" class="nav__link icon-home">Contact</a>
-          <a href="about.html" class="nav__link icon-keyboard">About</a>
-          <a href="projects.html" class="icon-github nav__link">Projects</a>
+          <a id="contact"href="contact.html" class="nav__link icon-home">Contact</a>
+          <a id="email" class="hidden" href="">dinh.andre@yahoo.com</a>
+          <a id="aboutLink"href="about.html" class="nav__link icon-keyboard">About</a>
+          <a id="about" class="hidden" href="">Lorem</a>
+          <a id="projects"href="projects.html" class="icon-github nav__link">Projects</a>
+          <a id="github" class="hidden" href="">GitHub</a>
         </nav>
       </header>
-      <article class=" article__header--paragraph col span_12_of_12">
-        <h2>Lorem ipsum 1</h2>
+      <article id="paragraph" class=" article__header--paragraph col span_12_of_12">
+        <h2 class="">Lorem ipsum 1</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis arcu eu ipsum aliquet suscipit. Nullam mollis elit at eros cursus malesuada. Mauris molestie metus sed quam tincidunt, a fringilla risus vehicula. Suspendisse potenti. Phasellus pulvinar pretium massa in accumsan. Vestibulum tristique ex blandit, hendrerit nisl ut, accumsan est. Morbi finibus urna viverra, ullamcorper nunc sed, scelerisque purus. Mauris posuere ullamcorper turpis sed aliquam.</p>
       </article>
       <section >
-        <article class="article__header--form col span_12_of_12 ">
+        <article id="fieldP"class="article__header--form col span_12_of_12 ">
           <section class="col span_8_of_12">
-            <h2>Lorem ipsum 2</h2>
+            <h2 class="">Lorem ipsum 2</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis arcu eu ipsum aliquet suscipit. Nullam mollis elit at eros cursus malesuada. Mauris molestie metus sed quam tincidunt, a fringilla risus vehicula. Suspendisse potenti. Phasellus pulvinar pretium massa in accumsan. Vestibulum tristique ex blandit, hendrerit nisl ut, accumsan est. Morbi finibus urna viverra, ullamcorper nunc sed, scelerisque purus. Mauris posuere ullamcorper turpis sed aliquam.</p>
           </section>
           <form class="col span_4_of_12">
           <fieldset>
             <legend>Questions?</legend>
-            <lable><input id="given-name" name="given-name" type="text" placeholder="First name" required autofocus></lable>
+            <lable><input id="given-name" name="given-name" type="text" placeholder="First name" required autofocus>
+            <div id="feedback"></div></lable>
             <lable><input id="family-name" name="family-name" type="text" placeholder="Last name" required autofocus></lable>
             <lable><textarea id="comments" name="comments" type="comments" placeholder="Comments"  rows="5" cols="32" required></textarea></lable>
             <button>Submit</button>
@@ -42,16 +47,18 @@
         </form>
         </article>
       </section>
-      <article class=" article__header--img col span_12_of_12">
+      <article id="imgP"class=" article__header--img col span_12_of_12">
         <img src="side-bg.jpg" class="col span_5_of_12">
         <section class="col span_7_of_12">
-          <h2>Lorem ipsum 3</h2>
+          <h2 class="">Lorem ipsum 3</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis arcu eu ipsum aliquet suscipit. Nullam mollis elit at eros cursus malesuada. Mauris molestie metus sed quam tincidunt, a fringilla risus vehicula. Suspendisse potenti. Phasellus pulvinar pretium massa in accumsan. Vestibulum tristique ex blandit, hendrerit nisl ut, accumsan est. Morbi finibus urna viverra, ullamcorper nunc sed, scelerisque purus.Mauris posuere ullamcorper turpis sed aliquam.</p>
         </section>
       </article>
     </main>
-    <footer>
+    <footer class="col span_5_of_12">
       <p class="copyRight">Andre's Blog &copy; 2015 - All Rights Reserved</p>
     </footer>
+    <script src="interactions.js"></script>
+    <script src="scrolling.js"></script>
   </body>
 </html>

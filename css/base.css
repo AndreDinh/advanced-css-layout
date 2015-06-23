@@ -491,50 +491,95 @@ th {
 
 
 /*main styles*/
-header{
-  height: 100px;
-  background-color: #E8F1FF;
+
+/*phones*/
+@media(min-width: 300px){
+  p{
+    font-size: 0.938em;
+  }
+
 }
-h1{
-  font-size: 40px;
-  padding: 5px;
+/*tablets*/
+@media(min-width: 768px){
+  header{
+    height: 6.250em;
+  }
+  body{
+    height: 50%;
+  }
+  p{
+    font-size: .625em;
+  }
+
 }
+/*Desktop*/
+@media(min-width: 1200px){
+
+  h1{
+    font-size: 1.618em;
+    padding: 0.313em;
+  }
+  h2{
+    font-size: 1.618em;
+    font-family: 'LatoBoldBold';
+    text-align: center;
+    margin: 2px;
+  }
+  nav{
+    display: fix;
+    font-family: 'LatoRegular';
+    margin: 2.500em;
+  }
+  input{
+    border-radius: 0.625em;
+  }
+  p{
+    font-size: 25px;
+  }
+  article{
+    height: 350px;
+  }
+
+}
+/*overall*/
 h2{
-  font-family: 'LatoBoldBold';
-  text-align: center;
-  margin: 2px;
-  padding: 10px;
-}
+    font-family: 'LatoBoldBold';
+    text-align: center;
+    margin: 0.125em;
+  }
 nav{
-  font-family: 'LatoRegular';
-  margin: 40px;
-}
-body{
-  background-color: #BAC1CC;
-}
-a{
-  font-size: 20px;
-}
-a:visited{
-  color: black;
+    font-family: 'LatoRegular';
+    margin: 2.500em;
 }
 p{
-  font-family: 'Roboto';
-  text-decoration: none;
-  font-size: 25px;
-  margin: 0 50px;
+    font-family: 'Roboto';
+    text-decoration: none;
+    margin: 0 3.125em;
 }
 article{
-  color: #4C4E4E;
-  height: 350px;
+    color: #4C4E4E;
 }
-fieldset{
-  border: 0;
+
+a{
+ color: black;
+  font-size: 1.250em;
+  text-decoration: none;
 }
-input{
-  border-radius: 10px;
+a:visited{
+    color: black;
 }
 .copyRight{
+  margin-top: 300px;
   font-size: 10px;
   color: gray;
+}
+body{
+    background-color: #BAC1CC;
+}
+fieldset{
+    border: 0;
+}
+header{
+  width: 100%;
+  background-color: #E8F1FF;
 }
